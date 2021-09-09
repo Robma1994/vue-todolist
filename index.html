@@ -18,7 +18,7 @@
             <input type="text" v-model="newTasks" placeholder="Inserisci la tua lista di cose">
             <button @click="addNewTasks">Aggiungi</button>
         </div>
-        <div class="list-tasks">
+        <div class="list-tasks" v-if="tasks.length > 0">
             <ul>
                 <li v-for="(task, index) in tasks" >
                     {{task}}
@@ -26,6 +26,7 @@
                 </li>
             </ul>
         </div>
+        <h2 v-else>Bravo, hai completato tutti i tasks</h2>
     </div>
     <script src="js/main.js"></script>
 </body>
