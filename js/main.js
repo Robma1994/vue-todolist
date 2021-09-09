@@ -11,7 +11,11 @@ const app = new Vue(
             addNewTasks(){
                 if(this.newTasks != "") {
                     this.tasks.push(this.newTasks);
+                    this.newTasks = "";
                 }
+            },
+            deleteTasks(index){
+                this.tasks.splice(index, 1);
                 
             }
         }
