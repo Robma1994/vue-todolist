@@ -9,7 +9,10 @@ const app = new Vue(
         },
         methods: {
             addNewTasks(){
-                this.tasks.push(this.newTasks);
+                if(this.newTasks != "") {
+                    this.tasks.push(this.newTasks);
+                }
+                
             }
         }
     }
