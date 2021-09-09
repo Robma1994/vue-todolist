@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Common*/
+/*Container*/
+.container {
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.container > .logo {
+    height: 15vh;
+    text-align: center;
+}
+.logo img {
+    height: 100%;
+}
+
+/*Fine Container*/
+
+/*Add*/
+.add-to-do {
+    padding: 20px 20px;
+    text-align: center;
+}
+/*Fine add*/
+
+/*List tasks*/
+.list-tasks {
+    border: 1px solid black;
+}
+.list-tasks li {
+    background-color: lightgrey;
+    list-style-type: none;
+    border: 1px solid black;
+}

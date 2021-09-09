@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div id="root" class="container">
+        <div class="logo">
+            <img src="https://www.boolean.careers/images/misc/logo.png" alt="Logo Boolean">
+        </div>
+        <div class="add-to-do">
+            <input type="text" v-model="newTasks" placeholder="Inserisci la tua lista di cose">
+            <button @click="addNewTasks">Aggiungi</button>
+        </div>
+        <div class="list-tasks">
+            <ul>
+                <li v-for="task in tasks">{{task}}</li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
